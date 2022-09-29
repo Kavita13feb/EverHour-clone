@@ -82,7 +82,7 @@
             font-family:geomanist-regular, sans-serif;
             
         }
-        #right_icons >button:nth-child(2){
+        #right_icons >a:nth-child(2)>button{
             background-color: #57bb71;
             border-radius: 5px;
             border:none;
@@ -157,7 +157,7 @@
             justify-content: center;
             /* align-items: center; */
             gap:10px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             font-size:16px;
             font-family: Arial, Helvetica, sans-serif;
             height:30px;
@@ -167,7 +167,7 @@
         #Intro-section span{
             margin-bottom: 6px;
         }
-        h3+div{
+        #inputs{
             display:flex;
             gap:20px;
             justify-content:center;
@@ -296,6 +296,127 @@
             
         }
 
+        #benefits{
+            padding-top: 50px;
+            margin:auto;
+            width:85%;
+            display: grid;
+            grid-template-columns: 65% 35%;
+            grid-template-rows: 200px;
+            /* border: 1px solid red; */
+        }
+        #benefits>div{
+            /* border:1px solid yellow */
+        }
+        #benefits>div:nth-child(1){
+            /* border:1px solid yellow */
+
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            /* align-items:flex-start */
+            padding-left: 20px;
+        }
+        #benefits h1{
+            /* font-size: 47px; */
+            font-family: geomanist-regular, sans-serif;
+            /* line-height: 56px; */
+            font-weight:300;
+            color:hsl(0,0%,20%)
+
+    }
+        #benefits h3{
+
+            /* font-size: 47px; */
+            font-family: geomanist-regular, sans-serif;
+            /* line-height: 56px; */
+            font-weight:300;
+            color:#767676;
+        }
+        #benefits input{
+             padding:15px 80px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        } 
+        #benefits  button{
+            padding: 16px 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #57bb71;
+            border-radius: 4px;
+            border:none;
+            color:white
+            
+        }
+        .b_inputs{
+            display: flex;
+            gap :20px
+        }
+        #benefits>div:nth-child(2)>ul{
+             font-size: 18px;
+             font-family: geomanist-regular, sans-serif;
+            /* line-height: 56px; */
+            font-weight:300;
+            
+            color:#333333 ;
+
+        }
+        #benefits ul li:not(:last-child){
+
+margin-bottom: 10px;
+list-style:disc;
+/* font-size: 30px; */
+
+
+}
+#review{
+    padding-top: 50px;
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 600px;
+    
+    /* gap:20px */
+
+}
+#review>div{
+    /* border: 1px solid rgb(78, 33, 182); */
+    /* margin-left: 20px; */
+}
+.left>h1{
+    font-family:geomanist-book, sans-serif;
+      font-size:36px;
+      font-weight: 500;
+      line-height: 43px;
+      margin :0px 0px 64px
+}
+.left>div{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    /* grid-template-rows: ; */
+}
+.left>div:nth-child(1){
+
+}
+.left p{
+    font-size:18px;
+    font-family: geomanist-regular, sans-serif;
+    color:#33333f;
+    line-height:25px
+    
+}
+.right{
+    margin:50px;
+}
+.quote{
+    font-size: 50px;
+    margin-left: 20px;
+    color:#d7f3e3;
+}
+      
         
 
     </style>
@@ -312,8 +433,8 @@
                 <p>Demo</p>
         </div>
        <div id="right_icons">
-            <button>Log in</button>
-            <button>Sign up</button>
+           <a href="C:\Users\shree\Desktop\Everhour_project\login.html"><button>Log in</button></a>
+           <a href="C:\Users\shree\Desktop\Everhour_project\Signup.html"><button>Sign up</button></a> 
         </div>
 
 
@@ -331,7 +452,7 @@
     </div>
         <h1>Powerful time tracking software with<br> hassle-free integrations</h1>
         <h3>Accurate time tracker for budgeting, client invoicing and painless payroll.<br> Works with the apps your team already use</h3>
-    <div>
+    <div id="inputs">
             <input type="text" placeholder="Work email...">
             <a href=""><button>Try Free</button></a>
     </div>
@@ -340,7 +461,57 @@
 
     </div>
 </div>
+<div id ="review">
+    <div class="left">
+        <h1>Everhour has helped 240,000+ <br>people complete over 135 <br>million tasks in 3 million
+            <br> projects
+        </h2>
+        <div>
+            <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+            <div>
+               
+                <p>Everhour helps us track our engineering 
+                hours which is a requirement for several Government grants we have received. Without Everhour, we would be unable to accurately track the hours associated with each individual project we are working on as a company. The reports are easily customizable which allows me to extract the data I need. Everhour is a 
+                great tool for our time tracking needs!</p>
+            <p><strong> Kelly Bonneau, CPA</strong><br> 
+            Accounting Manager at <b>7shifts</b></p>
+            <a href="">Read more reviews</a>
+          </div>
+        </div>
 
+    </div>
+    
+    <div class="right">
+        <img src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/customers/customer-kelly.webp" alt="">
+    </div>
+
+</div>
+<div id="benefits">
+    <div>
+        <h1>Take control of your time with Everhour
+        </h1>
+        <h3>Beautiful integrations. Intuitive interface. No unexpected fees</h3>
+        <div class="b_inputs">
+            <input type="email" placeholder="Work email...">
+            <a href=""><button>Try Free</button></a>
+
+        </div>
+        <!-- <a href=""> <img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"> -->
+            <!-- <span> Or sign up with Google Account</span></a> -->
+    </div>
+    <div>
+        <ul>
+            <li>Track time from the apps you already use</li>
+            <li>Know where your team's time is going
+            </li>
+            <li> Keep projects on budget</li>
+            <li> Increase transparency</li>
+            <li>Make your workflow more efficient</li>
+            <li>Spot burnout before it happens</li>
+        </ul>
+    </div>
+
+</div>
 
 
     <footer>
