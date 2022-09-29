@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Everhour</title>
+    <style>
+        h1{
+       text-align: center;
+        }
+        #login{
+            margin: auto;
+            width:70%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 400px;
+            column-gap: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* border: 1px  solid red; */
+        }
+        #login>div{
+            /* border: 1px  solid rgb(47, 0, 255); */
+        }
+        #form{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+         button{
+            /* display: flex; */
+            padding: 0px 0px 10px;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16px;
+
+            border-radius: 4px;
+            background-color: white;
+            text-align: center;
+             justify-content: center;
+             margin-bottom: 0px;
+             /* border-color:#767676;   */
+            /* border-bottom-color: #767676; */
+            
+         }
+        
+         button:hover{
+            background-color: whitesmoke;
+
+        }
+        #form input {
+            /* width:35%; */
+            padding:15px 110px 20px 10px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: start;
+            
+        }
+
+       #login_btn{
+            /* display: flex; */
+            margin-top: 30px;
+            padding: 20px 55px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            border-radius: 4px;
+            background-color:#57bb71;
+            border:none;
+            text-align: center;
+            justify-content: center;
+            color:white; 
+             
+            
+        }
+        #login_btn:hover{
+            background-color: 
+#3ab95c;
+        }
+        
+
+        
+        #form span{
+            /* margin-top:-6px; */
+            /* border: 1px solid red; */
+            margin:0px;
+            padding:0px;
+        }
+        /* h3+a{
+            display:flex;
+            gap:20px;
+            justify-content:center; */
+           
+        /* } */
+        #form img{
+            height:10%;
+            width:10%;
+            /* border: 1px solid red; */
+            margin-top: 5px;
+            /* display: flex; */
+            /* align-items: center; */
+
+        } 
+        .links ,p{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:  #767676;
+        }
+        a+div{
+            display: flex;
+            gap: 15px;
+        }
+        .news{
+            font-family: geomanist-regular, sans-serif;
+        }
+        .news>h4{
+            font-size: 18px;
+            color:
+#333333
+        }
+        .news>p{
+            font-size: 16px;
+            color:
+#7C7C7C
+        }
+        .news>small{
+            font-size: 14px;
+            color:
+#EE3E38
+        }
+        p a{
+            color: #4A90E2;
+        }
+
+    </style>
+</head>
+<body>
+        
+    <h1>Log in to Everhour </h1>
+    <div id="login">
+
+        <div id="form">
+            <a href=""> <button><img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><span> Or sign up with Google Account</span></button></a> 
+            <p>or</p>
+             <input type="email" placeholder="Enter your email...">
+             <input type="password" placeholder="Password...">
+             <a href=""><button id="login_btn">Log in</button></a>
+             <div><a href="" class="links">Login with SSO</a><a href=""  class="links">More login options</a></div>
+             
+             <a href="" class="links">Reset password</a>
+   
+        </div>
+     <div class="news">
+        <small>NEWS</small>
+        <h4>New Timeline</h4>
+        <p>Sync assignments from your connected integrations automatically once you add a task assignee and a due date the... <span><a href="">Learn more</a></p>
+        <h4>Updates to Tracking Time Without a Task</h4>
+        <p>Now you can track time without a task and it will show up on team timesheets immediately. <span><a href="">Learn more</a> </span></p>
+        <h4>Integration with Todoist</h4>
+        <p>Everhour now integrates with Todoist! <span><a href="">Learn more</a> </span></p>
+     </div>
+     
+        
+    </div>
+    
+</body>
+</html>
