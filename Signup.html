@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up to Everhour</title>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    
     <style>
         body{
             margin-top: 13%;
@@ -71,7 +73,7 @@ font-weight: 400;
             background-color: whitesmoke;
 
         }
-        input+ a >button{
+        #signin{
             /* display: flex; */
             margin-top: 30px;
             padding: 20px 55px;
@@ -87,7 +89,7 @@ font-weight: 400;
             
             
         }
-        input+a>button:hover{
+        #signin:hover{
             background-color: 
 #3ab95c;
         }
@@ -122,12 +124,34 @@ font-weight: 400;
             color:#767676; 
 
         }
+        #error{
+            color:red
+        }
 
 
 
     </style>
 </head>
 <body>
+    <div id ="navbar">
+        <div id="left_icons">
+            <a href="Homepage.html">
+                <img src="https://th.bing.com/th/id/OIP.9vN1jbixqdCPpeWHP9SyxwHaCd?pid=ImgDet&rs=1" alt="Everhour-logo1">
+                </a>
+                <div >
+                <p>Intigrations</p>
+                <button>New</button>
+                </div>
+                <p>Pricing</p>
+                <p>Demo</p>
+        </div>
+       <div id="right_icons">
+           <a href="login.html"><button>Log in</button></a>
+           <a href="Signup.html"><button>Sign up</button></a> 
+        </div>
+
+
+    </div>
     
     <div id="signup">
 
@@ -135,10 +159,12 @@ font-weight: 400;
                <h3>Join 3,500+ customers who use Everhour to track time and plan their future projects more effectively</h3>
                 <a href=""> <button><img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><span> Or sign up with Google Account</span></button></a>
                   <p>or</p>
-                   <input type="text" placeholder="Work email...">
-                   <a href=""><button>Get Started</button></a>
+                  <span id="registred" ></span>
+                   <input type="email" id="email"placeholder="Work email..." value required>
+                   <span id="error"></span>
+                   <a  ><button id="signin" >Get Started</button></a>
         
-           <div>
+            <div>
             <small>Free to try   •   No credit card required   •   1-minute signup</small>
            </div>
        </div>
@@ -146,3 +172,4 @@ font-weight: 400;
 
 </body>
 </html>
+<script src="./scripts/signup.js"></script>
