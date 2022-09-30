@@ -1,0 +1,120 @@
+#top_sec{
+padding: 10%;
+    width:50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* border:1px solid red */
+}
+#top_sec>h1{
+
+
+
+}
+#demo_card{
+    font-family:geomanist-regular, sans-serif;
+padding: 30px;
+    width:35%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#demo_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#demo_card h4{
+    font-size: 22px;
+    margin-left: 30px;
+}
+#demo_card li{
+    margin-top: 10px;
+    font-size: 18px;
+    color:#7C7C7C;
+    font-family:geomanist-regular, sans-serif;
+    line-height: 23px;
+   
+
+}
+#Intro-section{
+    padding-top: 12%;
+    width:50%;
+    height:300px;
+    /* border: 1px solid red; */
+     margin: auto; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   /* align-items: center; */
+   text-align: center;
+    padding-bottom:10%;
+} 
+#inputs{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    /* border: 1px solid red; */
+
+}
+#Intro-section  h1{
+    font-size: 35px;
+    font-family: geomanist-regular, sans-serif;
+    line-height: 50px;
+
+    color:hsl(0,0%,20%);
+   
+}
+#Intro-section  h3{
+    font-size: 20px;
+    font-family: geomanist-regular, sans-serif;
+    line-height: 29px;
+    color: 
+#767676;
+     font-weight:400; 
+}
+#email{
+    padding:15px 80px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#Intro-section  button{
+    padding: 15px 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #57bb71;
+    border-radius: 4px;
+    border:none;
+    color:white
+    
+}
+
+
+    #googlesignup{   
+     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap:10px;
+    /* border: 1px solid black; */
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height:30px;
+  color: RGB(118, 118, 118) ; 
+
+}
+#Intro-section span{
+    /* margin-bottom: 6px; */
+}
+#inputs{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+   
+}
+#Intro-section img{
+    height:100%
+}
+#error{
+    color: red;
+}
