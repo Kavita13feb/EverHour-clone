@@ -328,3 +328,106 @@ font-size: 50px;
 margin-left: 20px;
 color:#d7f3e3;
 }
+
+#feature_sec{
+    width:90%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 600px;
+    border: 1px solid red;
+    /* margin:50px 0px 50px 24px; */
+    /* padding:92px 0px 48px; */
+   margin: auto;
+    
+}
+#feature_sec>div{
+    
+   
+    border: 1px solid rgb(31, 23, 23);
+    
+    gap: 10px;
+    
+
+
+}
+#feature_sec  li{
+    list-style: none;
+    margin:50px
+}
+#feature_sec  li:not(:last-child){
+    /* margin-bottom:50px */
+}
+#feature_sec  ul{
+    margin-top: 30px;
+}
+section{
+    padding-top: 10%;
+    width:90%;
+    margin: auto;
+    border:1px solid black;
+
+}
+section h2{
+text-align: center;
+}
+section ul{
+    height: 70px;
+    
+    display: flex;
+    /* justify-content: space-around; */
+
+ border:1px solid rgb(175, 9, 9);
+
+}
+section ul li{
+    width:14%;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 400;
+    border:1px solid rgb(5, 109, 92);
+   
+}
+section ul li a{
+    width:100%;
+    border:1px solid rgb(86, 9, 175);
+}
+section ul li a>img::after{
+    content:"Asana" ;
+
+}
+section ul li a>img{
+    width:30%;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px;
+}
+#cards>div{
+    border:1px solid rgb(86, 9, 175);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50px;
+}
+.card_right{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 18px;
+    color: #767676;
+}
+.card_right> p:nth-child(1){
+    font-weight: 400;
+    color:#201f1f;
+    font-size: 20px;
+}
+
+#left{
+    color:red
+}
+
+
+
+    
+
+    

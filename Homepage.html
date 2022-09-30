@@ -23,8 +23,8 @@
                 <p>Intigrations</p>
                 <button>New</button>
                 </div>
-                <p>Pricing</p>
-                <p>Demo</p>
+                <a href="pricingPage.html"><p>Pricing</p></a>
+                <a href="demoPage.html"><p>Demo</p></a>
         </div>
        <div id="right_icons">
            <a href="login.html"><button>Log in</button></a>
@@ -56,9 +56,112 @@
 
     </div>
 </div>
+
+
+    <div id="feature_sec">
+        <div>
+            <ul>
+                <li>
+                    <i class="fa-thin fa-alarm-plus"></i>
+                    <span onclick="showImg()" >Time tracking</span>
+                    <p></p>
+               </li>
+                <li>
+                    <i class="fa-regular fa-money-check-dollar"></i>
+                    <span onclick="showBill()">Billing and budgeting</span>
+                    <p></p>
+                </li>
+                <li>
+                    <span id ="task"onclick="showTask()">
+                        Task management</span>
+                        <p></p>
+                </li>
+                <li>
+                    <span onclick="showPlanning()"></span>Visual planning</span>
+                    <p></p>
+                </li>
+                <li>
+                    <span onclick="showExpenses()">Expenses</span>
+                    <p></p>
+                </li>
+                <li>
+                    <span onclick="showInvoicing()">Invoicing</span>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+        <div id="pics">
+            <!-- <img src="https://blog-cdn.everhour.com/assets/images/new-design/screens/new-tour/invoices-preview-v3.webp" " alt=""> -->
+        
+        </div>
+
+    </div>
+   
+<section>
+    <div>
+        <h2>Track time and watch progress inside two dozen popular apps
+        </h2>
+        <ul>
+            <li>
+                <a><img src="https://www.bing.com/th?id=OSK.abede6d0c4739bbf74b499f7d8a6cb84&w=148&h=148&c=7&o=6&pid=SANGAM" alt="">
+                Asana</a></li>
+            <li>
+                <a><img src="" alt=""></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><span>Basecamp</span></a>
+               
+            </li>
+            <li>
+                <a><img src="" alt=""><span>Jira</span></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><span>GitHub</span></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><span>ClickUp</span></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><span>Monday</span></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><span>Notion</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="progress">
+
+    </div>
+    <div id="cards">
+        <div>
+            <div id="left"><i class="fa-light fa-comment-middle"></i></div>
+            <div class ="card_right">
+                <p>Quick setup</p>
+                <p>Connect Everhour with your tool and start tracking time right away. No manual project setup required.</p>
+            </div>
+        </div>
+        <div>
+            <div ></div>
+            <div class ="card_right">
+                <p>Native integration</p>
+                <p>Time tracking controls natively appears inside your project management tool, making it easy to track time.</p>
+            </div>
+        </div>
+        <div>
+            <div ></div>
+            <div class ="card_right">
+                <p>Automatic updates</p>
+                <p>Everhour syncs changes automatically. That means your reports will always show the freshest data.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <div id ="review">
     <div class="left">
-        <h1>Everhour has helped 240,000+ <br>people complete over 135 <br>million tasks in 3 million
+        <h1 >Everhour has helped 240,000+ <br>people complete over 135 <br>million tasks in 3 million
             <br> projects
         </h2>
         <div>
@@ -218,3 +321,5 @@
 </body>
 </html>
 <script src="./scripts/signup.js"></script>
+<script src="./scripts/features.js"></script>
+<script src="./scripts/progress.js"></script>
