@@ -46,7 +46,7 @@ font-weight: 400;
 
         #signup  input {
             /* width:35%; */
-            padding:15px 110px 20px 10px;
+            padding:25px 120px 20px 10px;
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
             text-align: start;
@@ -55,7 +55,7 @@ font-weight: 400;
 
         h3+a> button{
             /* display: flex; */
-            padding: 0px 0px 10px;
+            /* padding: 0px 0px 5px; */
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
 
@@ -63,9 +63,11 @@ font-weight: 400;
             background-color: white;
             /* text-align: center; */
              /* justify-content: center; */
-             margin-bottom: 0px;
+             margin-left: 10px;
              border-color:#767676;  
             border-bottom-color: #767676;
+            border-width: 1px;
+            width:335px;
             
             
         }
@@ -93,21 +95,21 @@ font-weight: 400;
             background-color: 
 #3ab95c;
         }
+        #googlesignup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap :10px;
+
+
+        }
+        #signup a{
+            text-decoration: none;
+        }
         
 
         
-        #signup span{
-            /* margin-top:-6px; */
-            /* border: 1px solid red; */
-            margin:0px;
-            padding:0px;
-        }
-        /* h3+a{
-            display:flex;
-            gap:20px;
-            justify-content:center; */
-           
-        /* } */
+        
         #signup img{
             height:10%;
             width:10%;
@@ -127,20 +129,76 @@ font-weight: 400;
         #error{
             color:red
         }
+       #review_cards{
+        padding-top: 10%;
+        margin: auto;
+        width:90%;
+        display: grid;
+        grid-template-columns: 30% 35% 30%;
+        grid-template-rows: repeat(3,340px);
+        gap:40px;
+       }
+       #review_cards>div{
+        border: 0.5px solid rgb(140, 233, 190);
+        padding:30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        
+       }
+       #review_cards p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+       }
+       #review_cards>div:last-child{
+        grid-area: 3/3/4/4;
+       }
+       .mid{
+        margin-top: 20px;
+    padding-bottom: 400px;
+    
+
+       }
 
 
+       #bottom_btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ 
+}
+#bottom_btn button{
 
+    margin-top: 30px;
+            padding: 20px 55px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            border-radius: 4px;
+            background-color: white;
+            border:none;
+            /* text-align: center; */
+             /* justify-content: center; */
+             color:#57bb71;
+             border-color: #57bb71;
+             border: 1px solid #3ab95c;
+           
+            
+}
+#bottom_btn button:hover{
+    background-color: #3ab95c;
+    color: white;
+}
     </style>
 </head>
 <body>
-    <div id ="navbar">
+    <div class ="navbar" id="navbar" >
         <div id="left_icons">
             <a href="Homepage.html">
                 <img src="https://th.bing.com/th/id/OIP.9vN1jbixqdCPpeWHP9SyxwHaCd?pid=ImgDet&rs=1" alt="Everhour-logo1">
                 </a>
                 <div >
-                <p>Intigrations</p>
-                <button>New</button>
+                <a href=""><p>Intigrations</p>
+                    <button>New</button></a>
                 </div>
                 <a href="pricingPage.html"><p>Pricing</p></a>
                 <a href="demoPage.html"><p>Demo</p></a>
@@ -150,24 +208,88 @@ font-weight: 400;
            <a href="Signup.html"><button>Sign up</button></a> 
         </div>
 
-
-    </div>
+ </div>
     
+ 
     <div id="signup">
 
                <h1>Make your team more productive <br>with Everhour</h1>
                <h3>Join 3,500+ customers who use Everhour to track time and plan their future projects more effectively</h3>
-                <a href=""> <button><img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><span> Or sign up with Google Account</span></button></a>
+                <a href=""> <button id="googlesignup">
+                    <img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><p> Or sign up with Google Account</p>
+                </button></a>
+                
+                </div</a>
                   <p>or</p>
                   <span id="registred" ></span>
                    <input type="email" id="email"placeholder="Work email..." value required>
                    <span id="error"></span>
-                   <a  ><button id="signin" >Get Started</button></a>
+                   <a  href=""><button id="signin" >Get Started</button></a>
         
             <div>
             <small>Free to try   •   No credit card required   •   1-minute signup</small>
            </div>
        </div>
+
+
+       <div id="review_cards">
+        <div>
+            <p>“I am the owner of the company, and I use Everhour for timekeeping of myself and my subcontractors. All team members use the system - from web developers to tech support to project management to design.”
+                   <br> <br>  — Jennifer H. (Source: <a href="">TrustRadius</a>)
+                </p>
+        </div>
+        <div style="padding: 40px; height:350px">
+            <p>“Everhour is being used by my department now, but it's planned to be used across the whole company. We were having problems tracking the times of every project and Everhour ended up being the best solution to the issue. We’re tracking our tasks involved in every project, in every level (software development, meetings, project management, etc.)”
+               <br> <br> — Maria Lucia S. (Source: <a href="">TrustRadius</a>)</p>
+        </div>
+        <div>
+            <p>
+                “Everhour helps me manage/plan my weekly activities a lot more effectively, since I know how much time I have to work on things each day, and can quickly update estimated times to reallocate tasks as needed.”
+
+               <br> <br>  — Dan S. (Source: <a href ="">Capterra</a>)
+            </p>
+
+
+        </div>
+        <div> 
+            <p>“We are using Everhour as a core business software, because our business is to sell our time. When you use such software, what you care about the most is speed, flexibility, ability to integrate with all major project management software. And Everhour is exactly that kind of software”
+
+               <br> <br> — Ivan M. (Source: <a href="">G2Crowd</a>)
+                
+                </p>
+        </div>
+        <div style="padding-bottom: 450px; margin-top: 90px;">
+            <p>
+                “We are a 15 people team working remotely from different cities of Latin America and Europe, and time tracking for each client, project, and task has always been a major issue. We’ve been using Everhour for the past year or so, and it has become an essential tool for our team. It does not only give us the ability to track how much time we have dedicated to a project but also to estimate how much time a particular task will need in order to be completed next time and by who. Easily create and save reports with just a few clicks”
+
+                <br>  <br>— Daniel Y. (Source: <a href="">TrustRadius</a>)
+            </p>
+        </div>
+        <div>
+            <p>“The most important gain from using Everhour is that we can track our tasks in real-time without having to leave the browser. The Chrome add-on helps us initiate the time for a specific task. If we are already on Asana, a simple click does the job.”
+
+               <br> <br> — Dimitris R. (Source: <a href ="">Capterra</a>)
+                
+                </p>
+        </div>
+        <div>
+            <p>
+                “Everhour's integration with Asana is wonderful for a remote team. We track all activities in Asana, but before Everhour I often wondered how long it was taking to do a task, now I know exactly. I can see who is working right now and a summary each day”.
+
+                <br> <br> — Doug H.  (Source: <a href="">G2Crowd</a>)
+            </p>
+        </div>
+        <div>
+            <p>“Everhour has already paid for itself for the year by helping me track time I was missing in client projects. It is easy to use, has friendly customer service people, and the reports make it easy to invoice clients and track projects.”
+
+             <br> <br> — Jennifer D. (Source: <a href="">TrustRadius</a>)
+                
+                </p>
+        </div>
+        
+       </div>
+
+    <div id="bottom_btn">   <a href="" ><button >Read more</button></a></div>
        
 
 </body>
