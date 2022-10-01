@@ -11,17 +11,19 @@
     
     <link rel="stylesheet" href="./styles/homepage.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
 
 </head>
 <body>
-    <div id ="navbar">
+    <div class ="navbar" id="navbar" >
         <div id="left_icons">
             <a href="Homepage.html">
                 <img src="https://th.bing.com/th/id/OIP.9vN1jbixqdCPpeWHP9SyxwHaCd?pid=ImgDet&rs=1" alt="Everhour-logo1">
                 </a>
                 <div >
-                <p>Intigrations</p>
-                <button>New</button>
+                <a href=""><p>Intigrations</p>
+                    <button>New</button></a>
                 </div>
                 <a href="pricingPage.html"><p>Pricing</p></a>
                 <a href="demoPage.html"><p>Demo</p></a>
@@ -52,7 +54,7 @@
         </div>
       <span id="error" ></span>
     <div id="googlesignup">
-        <a href="" > <img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><span> Or sign up with Google Account</span></a>
+        <a href="" > <img src="https://www.bing.com/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&w=104&h=104&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="google"><p> Or sign up with Google Account</p></a>
 
     </div>
 </div>
@@ -77,7 +79,7 @@
                         <p></p>
                 </li>
                 <li>
-                    <span onclick="showPlanning()"></span>Visual planning</span>
+                    <span onclick="showVisualplaning()"></span>Visual planning</span>
                     <p></p>
                 </li>
                 <li>
@@ -159,31 +161,35 @@
     </div>
 </section>
 
-<div id ="review">
-    <div class="left">
+
+<div id="review_container">
+ <div id ="review">
+    
+    <div class="top">
         <h1 >Everhour has helped 240,000+ <br>people complete over 135 <br>million tasks in 3 million
             <br> projects
-        </h2>
-        <div>
+        </h1>
+    </div>
+    <div class="bottom">
             <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
             <div>
                
                 <p>Everhour helps us track our engineering 
                 hours which is a requirement for several Government grants we have received. Without Everhour, we would be unable to accurately track the hours associated with each individual project we are working on as a company. The reports are easily customizable which allows me to extract the data I need. Everhour is a 
                 great tool for our time tracking needs!</p>
-            <p><strong> Kelly Bonneau, CPA</strong><br> 
-            Accounting Manager at <b>7shifts</b></p>
-            <a href="">Read more reviews</a>
+               <p><strong> Kelly Bonneau, CPA</strong><br> 
+                Accounting Manager at <b>7shifts</b></p>
+              <a href="">Read more reviews</a>
           </div>
-        </div>
-
+          
     </div>
-    
     <div class="right">
         <img src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/customers/customer-kelly.webp" alt="">
     </div>
 
+ </div>
 </div>
+
 <div id="benefits">
     <div>
         <h1>Take control of your time with Everhour
@@ -210,6 +216,7 @@
     </div>
 
 </div>
+
 
 
     <footer>
@@ -317,9 +324,15 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
     
 </body>
 </html>
 <script src="./scripts/signup.js"></script>
 <script src="./scripts/features.js"></script>
 <script src="./scripts/progress.js"></script>
+<script src="./scripts/navbar.js"></script>

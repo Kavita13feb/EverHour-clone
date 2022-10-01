@@ -22,10 +22,11 @@ let imgsobj=[
 
 
 
-
-
+  
  function showImg(event){
 
+
+  document.querySelector("#pics").innerHTML=""
   console.log(event)
     console.log("hello")
    let task_pic=document.createElement("img")
@@ -34,6 +35,7 @@ let imgsobj=[
  
  }
 function showBill(event){
+  document.querySelector("#pics").innerHTML=""
 
   console.log("hello")
  let task_pic=document.createElement("img")
@@ -43,7 +45,7 @@ function showBill(event){
 
 }
 function showTask(){
-
+  document.querySelector("#pics").innerHTML=""
   console.log("hello")
  let task_pic=document.createElement("img")
  task_pic.src="https://blog-cdn.everhour.com/assets/images/new-design/screens/projects-board-view-v2.webp"
@@ -51,8 +53,8 @@ function showTask(){
 
 
 }
-function showPlanning(){
-
+function showVisualplaning(){
+  document.querySelector("#pics").innerHTML=""
   console.log("hello")
  let task_pic=document.createElement("img")
  task_pic.src="https://blog-cdn.everhour.com/assets/images/new-design/screens/resource-planning-members-new-v2.webp"
@@ -61,7 +63,7 @@ function showPlanning(){
 
 }
 function showExpenses(){
-
+  document.querySelector("#pics").innerHTML=""
   console.log("hello")
  let task_pic=document.createElement("img")
  task_pic.src="https://blog-cdn.everhour.com/assets/images/new-design/screens/expenses.webp"
@@ -70,7 +72,7 @@ function showExpenses(){
 
 }
 function showInvoicing(){
-
+  document.querySelector("#pics").innerHTML=""
   console.log("hello")
  let task_pic=document.createElement("img")
  task_pic.src="https://blog-cdn.everhour.com/assets/images/new-design/screens/new-tour/invoices-preview-v3.webp"

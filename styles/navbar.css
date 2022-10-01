@@ -1,5 +1,5 @@
 body{
-    padding: 0px;
+    padding: 0;
     margin:0;
     font-family:geomanist-regular, sans-serif;
     
@@ -11,9 +11,9 @@ body{
   
 }
 
-#navbar{
-    
-    height:70px;
+.navbar{
+    padding-top: 24px;
+    height:60px;
     /* border: 1px solid black; */
     width:100%;
     display: flex;
@@ -22,10 +22,33 @@ body{
     color: #636161;
     
     /* align-items:center; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
     position: fixed;
     top: 0;
+    background-color: white
+    /* z-index: 1; */
+    /* z-index: 1; */
+    
 }
+.navbar a:hover{
+    font-weight: bold;
+    transition: all 1s;
+}
+#right_icons>a:hover{
+    font-weight: bold;  
+}
+.boxshadow_navbar{
+    transition: all 1s;
+    padding-top :0px;
+    
+    /* align-items:center; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+   
+    
+}
+
+
 
 #left_icons{
     /* border: 1px solid red; */
@@ -35,8 +58,9 @@ body{
     align-items: center;
     
 }
-#left_icons a p{
+#left_icons a {
     text-decoration: none;
+    color:#636161
 }
 #left_icons>div{
     display: flex;
@@ -47,7 +71,7 @@ body{
     width:30%
 
 }
-#left_icons>div>button{
+#left_icons>div>a>button{
 
     padding: 5px 8px;
     /* height: 30%; */
@@ -89,6 +113,14 @@ body{
     width:25%;
 }
 #left_icons a>img{
-    width:100%
+    width:100%;
+    margin-left: 30px;
     
+}
+@media all and (min-width:150px) and (max-width:838px){
+   
+
+
+    
+
 }
