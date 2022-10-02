@@ -104,10 +104,10 @@ body{
     #benefits{
     padding-top: 10%;
     margin:auto;
-    width:85%;
+    width:90%;
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 300px;
+    /* grid-template-rows: 300px; */
     /* border: 1px solid red; */
 }
 #benefits>div{
@@ -118,7 +118,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+  row-gap: 15px;
     align-items:center;
     padding-left: 20px;
 }
@@ -139,20 +139,33 @@ body{
     color:#767676;
 }
 .b_inputs{
-     padding:15px 80px;
+    /* width:80%; */
+    margin: auto;
+     /* padding:20px 80px; */
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    gap :20px
-    
+    gap :20px;
+    /* border:1px solid red; */
+    justify-content: center;
 } 
 .b_inputs button{
-    padding: 16px 50px;
+    padding: 16px 100px 16px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: #57bb71;
     border-radius: 4px;
     border:none;
+    color:white
+    
+}
+.b_inputs input{
+    padding: 16px 100px 16px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+    border-radius: 4px;
+    /* border:no?ne; */
     color:white
     
 }
@@ -174,3 +187,25 @@ list-style:disc;
 
 
 }
+#googlesignup a{
+  
+ display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+/* border: 1px solid black; */
+font-size:16px;
+font-family: Arial, Helvetica, sans-serif;
+height:30px;
+color: RGB(118, 118, 118) ; 
+text-decoration: none;
+
+}
+#googlesignup a:hover{
+text-decoration: underline;
+}
+#googlesignup img{
+    height:100%
+}
+
+
