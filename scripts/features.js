@@ -53,7 +53,8 @@ function showTask(){
 
 
 }
-function showVisualplaning(){
+
+function showVisual(){
   document.querySelector("#pics").innerHTML=""
   console.log("hello")
  let task_pic=document.createElement("img")
