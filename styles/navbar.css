@@ -25,12 +25,12 @@ body{
     
     position: fixed;
     top: 0;
-    background-color: white
-    /* z-index: 1; */
+    background-color: white;
+    z-index: 10;
     /* z-index: 1; */
     
 }
-.navbar a:hover{
+#left_icons a:hover{
     font-weight: bold;
     transition: all 1s;
 }
@@ -54,7 +54,7 @@ body{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
-    width:35%;
+    width:40%;
     align-items: center;
     
 }
@@ -62,18 +62,20 @@ body{
     text-decoration: none;
     color:#636161
 }
-#left_icons>div{
+#left_icons>div >a{
     display: flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* border: 1px solid red; */
-    width:30%
+    width:110%;
+    /* margin-left: 10px; */
 
 }
 #left_icons>div>a>button{
 
-    padding: 5px 8px;
+    padding: 4px 8px;
     /* height: 30%; */
     font-size: 12px;
     font-family:geomanist-regular, sans-serif;
@@ -81,6 +83,18 @@ body{
     border-radius: 4px;
     border:none;
     color:white
+}
+
+#logo{
+    /* height:0%; */
+    width:25%;
+    /* border: 1px solid green; */
+}
+
+#left_icons a>img{
+    width:100%;
+    /* margin-left: 20px; */
+    
 }
 #right_icons{
     display: flex;
@@ -100,6 +114,7 @@ body{
     background-color: white;
     border:none;
     font-family:geomanist-regular, sans-serif;
+    transition: all1 1s;
     
 }
 #right_icons >a:nth-child(2)>button{
@@ -108,15 +123,12 @@ body{
     border:none;
     color:white
 }
-#left_icons a{
-    /* height:0%; */
-    width:25%;
+#right_icons >a:nth-child(1)>button:hover{
+    font-weight: bold;
 }
-#left_icons a>img{
-    width:100%;
-    margin-left: 30px;
-    
-}
+
+
+
 @media all and (min-width:150px) and (max-width:838px){
    
 
